@@ -1,0 +1,14 @@
+
+<form [formGroup]="ClientForm" class="form">
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <mat-label>Mobile Phone Number</mat-label>                                  
+            <mat-form-field>
+               <input input-directive  allowDecimal=false  placeholder="+923xxxxxxxxx"  maxlength="13" formControlName="mobileno" matInput type="tel" autocomplete="off" >
+               <mat-error>{{ClientForm.controls['mobileno'].errors?.['msg']}}</mat-error>      
+              <!-- <mat-error *ngIf="!this.ClientForm.valid && !ClientForm.control['mobileno'].valid">{{ClientForm.controls['mobileno'].errors}}</mat-error> -->           
+              </mat-form-field>
+  </div> 
+
+  <p>Complete the form to enable button.</p>
+  <button type="submit">Submit</button>
+</form>
