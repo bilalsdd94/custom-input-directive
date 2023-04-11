@@ -1,20 +1,27 @@
-# custom-input-directive
-Angular custom input directive to reduce validation checks on input field
+# DirectiveAngular
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-What is it ?
--In angular applications alot of user input fields needed simple checks like minimum and maximum range, decimal allowed or not.
-for this purpose alot of duplicate code needed to be written in each component for performing error checks.So I made a directive to apply it on <input> tag and make it easier to apply validations on every component
+## Development server
 
-For now, it applies following checks on input fields.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
--Minimum and maximum of number
--allowDecimal or not
--Mobile number with +92 format 
+## Code scaffolding
 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Some other functions added -(use as your requirement):
+## Build
 
--setTwoNumberDecimal -> Convert to 2 decimal places
-- onKeydown -> Remove +,-,e from number fields
--convertToNumber -> remove multiple zero's eg 0000 to 0
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

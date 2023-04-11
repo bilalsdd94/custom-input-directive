@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="segment">
+		<form [formGroup]="form" (ngSubmit)="onSubmit()">
+			<div class="block">
+        <mat-label>Calories</mat-label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input required input-directive allowDecimal=false minVal=0 maxVal=3000
+            placeholder="Calories" formControlName="calories" matInput type="number" autocomplete="off" (keydown)="onKeydownPress($event)" (change)="onInputChange($event)">
+            <mat-error *ngIf="!form.valid && !form.controls['calories'].valid">{{form.controls['calories'].errors?.msg}}</mat-error>
+        </mat-form-field>
+			</div>
+
+      <div class="block">
+          <mat-label>Weight</mat-label>
+          <mat-form-field class="example-full-width" appearance="outline">
+              <input required input-directive allowDecimal=true minVal=0.6 maxVal=5
+              placeholder="Weight" formControlName="weight" matInput type="number" autocomplete="off" (keydown)="onKeydownPress($event)" (change)="onInputChange($event); setTwoNumberDecimal($event);">
+              <mat-error *ngIf="!form.valid && !form.controls['weight'].valid">{{form.controls['weight'].errors?.msg}}</mat-error>                                                                               
+            </mat-form-field>
+   
+
+      </div>
+
+			<div class="block">
+        <mat-label>Mobile number</mat-label>
+        <mat-form-field>
+          <input input-directive  allowDecimal=false  placeholder="+923xxxxxxxxx"  maxlength="13" formControlName="mobileno" matInput type="tel" autocomplete="off" >
+          <mat-error *ngIf="!form.valid && !form.controls['mobileno'].valid">{{form.controls['mobileno'].errors?.msg}}</mat-error>                                                                               
+        </mat-form-field>
+			</div>
+
+			<div class="block" style="margin-top: 50px;">
+				<button mat-raised-button color="accent" type="submit" [disabled]="!form.valid">
+          Submit
+        </button>
+			</div>
+		</form>
+	</div>
+</div>
