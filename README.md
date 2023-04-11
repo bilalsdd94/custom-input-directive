@@ -1,5 +1,4 @@
-# DirectiveAngular
-
+# Custom Input directive 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 Run ' ng serve -o ' to run the project in browser.
