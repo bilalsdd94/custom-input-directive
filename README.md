@@ -3,6 +3,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run ' ng serve -o ' to run the project in browser.
 
+Less talk : See project here:
+https://stackblitz.com/edit/angular-cutom-input-directive?file=main.t
+
+
+More Talk? Read below if you have time:
 
 What is it ?
 -In angular applications alot of user input fields needed simple checks like minimum and maximum range, decimal allowed or not.
