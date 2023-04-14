@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run ' ng serve -o ' to run the project in browser.
 
 <b> Less talk </b> : See project here:
-https://stackblitz.com/edit/angular-cutom-input-directive?file=main.t
+https://stackblitz.com/edit/angular-cutom-input-directive?file=app/form-field-theming-example.html
 
 
 <b> More Talk? </b> Read below if you have time:
